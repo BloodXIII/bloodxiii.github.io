@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>BloodXIII.com</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   	<style type="text/css">
-			
+
 			* {
 				margin: 0;
 				padding: 0;
@@ -21,14 +21,14 @@
 				top: 0;
 				left: 0;
 			}
-			
+
 			#video-bg-elem {
 				position: fixed;
 				top: 50%; left: 50%;
 				z-index: 1;
 				transform: translate(-50%, -50%);
 			}
-			
+
 			.content {
 				position: absolute;
 				width: 100%;
@@ -49,69 +49,109 @@
 				color: #fff;
 				font-family: kremlin, sans-serif;
 			}
-			
+
       a:link {
-color: #00a8ff;
-}
-a:visited {
-color: #00a8ff;
-}
-a:hover {
-color: #fc00ff;
-}
-		a {text-decoration: none; }
+        color: #00a8ff;
+        }
+        a:visited {
+        color: #00a8ff;
+        }
+        a:hover {
+        color: #fc00ff;
+        }
+  		a {
+          text-decoration: none !important;
+        }
+
+      .list-group-item {
+        background-color: transparent;
+        border: 0px;
+      }
 		</style>
-		
-		
 	</head>
 	<body>
-		
-		
-		
+
+
+
 
 		<div class="background-center">
-			<video poster="vlcsnap-2017-07-13-00h43m02s610.png" id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted"> 
+			<video poster="vlcsnap-2017-07-13-00h43m02s610.png" id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
 				<source src="SiteBG.webm" type="video/webm">
 				<source src="SiteBG.mp4" type="video/mp4">
 				Video not supported
-			</video>          
+			</video>
 		</div>
 
 
-		<div class="content">         
+		<div class="content">
 			<h1>Blood_XIII</h1>
 			<p>THIS IS A TEST. IT'S PROBABLY NOT GOING WELL.</p>
       <p><font size="2">CURRENT ISSUES: MOBILE VERSION IS NONEXISTENT</font></p>
-			
-			<br><br><br>
-			
-			    <div  align=center id="column1" style="float:left; margin:0; width:50%;">
-          <font face="kill the noise" font size="8" color="00a8ff">
-          <a href="http://www.roosterteeth.com/user/Blood_XIII">
-<img title="My Rooster Teeth Profile" alt="RT Profile" src="RoosterTeeth.png"><left></left>Rooster  Teeth  Profile</a>
-          <br><a href="https://twitter.com/Blood_XIII">
-<img title="My Twitter" alt="Twitter" src="Twitter.png">Twitter</a>
-          <br><a href="https://bloodxiii.tumblr.com/">
-<img title="My Tumblr" alt="Tumblr" src="Tumblr.png"><left></left>Tumblr</a>
-          <br><a href="https://www.twitch.tv/blood_xiii">
-<img title="My Twitch Channel" alt="Twitch" src="Twitch.png"><left></left>Twitch  Channel</a>
-	</font>
-			    </div>
 
-    				<div align=center id="column2" style="float:left; margin:0;width:50%;">
-          <font face="kill the noise" font size="8" color="00a8ff">
-          <a href="https://www.youtube.com/c/BloodXIII">
-<img title="My YouTube Channel" alt="YouTube" src="YouTube.png">YouTube  Channel</a>
-          <br><a href="https://account.xbox.com/en-us/Profile?gamerTag=xblood13">
-<img title="My Xbox Gamertag" alt="Xbox" src="Xbox.png">Xbox  Gamertag</a>
-          <br><a href="https://my.playstation.com/Blood_XIII">
-<img title="My PSN ID" alt="Playstation" src="Playstation.png">Playstation  Network ID</a>
-          <br><a href="https://steamcommunity.com/id/Blood_XIII/">
-<img title="My Steam Profile" alt="Steam" src="Steam.png">Steam  Profile</a>
-	</font>
-			    </div>
-			
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <font face="kill the noise" font size="8" color="00a8ff">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="http://www.roosterteeth.com/user/Blood_XIII">
+                    <img title="My Rooster Teeth Profile" alt="RT Profile" src="RoosterTeeth.png">
+                    Rooster  Teeth  Profile
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="https://twitter.com/Blood_XIII">
+                    <img title="My Twitter" alt="Twitter" src="Twitter.png">
+                    Twitter
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="https://bloodxiii.tumblr.com/">
+                    <img title="My Tumblr" alt="Tumblr" src="Tumblr.png">
+                    Tumblr
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="https://www.twitch.tv/blood_xiii">
+                    <img title="My Twitch Channel" alt="Twitch" src="Twitch.png">
+                    Twitch  Channel
+                  </a>
+                </li>
+              </ul>
+          	</font>
+          </div>
+          <div class="col-xs-6">
+            <font face="kill the noise" font size="8" color="00a8ff">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="https://www.youtube.com/c/BloodXIII">
+                    <img title="My YouTube Channel" alt="YouTube" src="YouTube.png">
+                    YouTube  Channel
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="https://account.xbox.com/en-us/Profile?gamerTag=xblood13">
+                    <img title="My Xbox Gamertag" alt="Xbox" src="Xbox.png">
+                    Xbox  Gamertag
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="https://my.playstation.com/Blood_XIII">
+                    <img title="My PSN ID" alt="Playstation" src="Playstation.png">
+                    PSN ID
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="https://steamcommunity.com/id/Blood_XIII/">
+                    <img title="My Steam Profile" alt="Steam" src="Steam.png">
+                    Steam  Profile
+                  </a>
+                </li>
+              </ul>
+          	</font>
+          </div>
+        </div>
+      </div>
 		</div>
-
 	</body>
 </html>
