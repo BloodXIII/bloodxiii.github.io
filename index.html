@@ -124,6 +124,38 @@
       .st-button {
         background-image: url("Steam.png");
       }
+
+      .fullscreen-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: -100;
+      }
+
+      .fullscreen-bg__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (min-aspect-ratio: 16/9) {
+        .fullscreen-bg__video {
+          height: 300%;
+          top: -100%;
+        }
+      }
+
+      @media (max-aspect-ratio: 16/9) {
+        .fullscreen-bg__video {
+          width: 300%;
+          left: -100%;
+        }
+      }
 		</style>
 	</head>
 	<body>
@@ -131,8 +163,8 @@
 
 
 
-		<div class="background-center">
-			<video poster="vlcsnap-2017-07-13-00h43m02s610.png" id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+		<div class="fullscreen-bg">
+			<video poster="vlcsnap-2017-07-13-00h43m02s610.png" id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted" class="fullscreen-bg__video">
 				<source src="SiteBG.webm" type="video/webm">
 				<source src="SiteBG.mp4" type="video/mp4">
 				Video not supported
