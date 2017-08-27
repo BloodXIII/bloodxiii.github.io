@@ -63,6 +63,7 @@
         size: 0.8em;
       }
       .img-button-left {
+        font-family: Streamster, sans-serif;
         height: 2.5em;
         background-size: 2em 2em;
         background-repeat: no-repeat;
@@ -71,8 +72,10 @@
         background-color: transparent;
         border: 0;
         text-align: left;
+        vertical-align: text-top;
       }
       .img-button-right {
+        font-family: Streamster, sans-serif;
         height: 2.5em;
         background-size: 2em 2em;
         background-repeat: no-repeat;
@@ -81,6 +84,7 @@
         background-color: transparent;
         border: 0;
         text-align: right;
+        vertical-align: text-top;
       }
       .rt-button {
         background-image: url("RoosterTeeth.png");
@@ -138,10 +142,18 @@
       @media (max-width: 767px) {
         .fullscreen-bg {
           background: url("BG Static.jpg") center center / cover no-repeat;
-      }
+        }
 
         .fullscreen-bg__video {
           display: none;
+        }
+
+
+        .img-button-left {
+          font-size: 0.6em;
+        }
+        .img-button-right {
+          font-size: 0.6em;
         }
       }
 
@@ -231,9 +243,9 @@
             <font face="kill the noise" font size="8" color="00a8ff">
               <ul class="list-group">
                 <li class="list-group-item text-right">
-                  <a href="http://www.roosterteeth.com/user/Blood_XIII">
-                    <button class="img-button-right rt-button">
-                      RT Profile
+                  <a href="https://www.youtube.com/c/BloodXIII">
+                    <button class="img-button-right yt-button">
+                      Youtube
                     </button>
                   </a>
                 </li>
@@ -265,9 +277,9 @@
             <font face="kill the noise" font size="8" color="00a8ff">
               <ul class="list-group">
                 <li class="list-group-item">
-                  <a href="https://www.youtube.com/c/BloodXIII">
-                    <button class="img-button-left yt-button">
-                      Youtube
+                  <a href="http://www.roosterteeth.com/user/Blood_XIII">
+                    <button class="img-button-left rt-button">
+                      RT Profile
                     </button>
                   </a>
                 </li>
