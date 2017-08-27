@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BloodXIII.com</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style type="text/css">
@@ -25,27 +26,27 @@
 				z-index: 1;
 				transform: translate(-50%, -50%);
         background-size: cover;
-			}
-			.content {
-				position: absolute;
-				width: 100%;
-				min-height: 100%;
-				z-index: 1000;
-				background-color: rgba(0,0,0,0.4);
-			}
-			.content h1 {
-				text-align: center;
-				font-size: 6em;
-				color: #fc00ff;
-				padding-top: 2%;
-			}
-			.content p {
-				text-align: center;
-				font-size: 1em;
-				letter-spacing: 0.3em;
-				color: #fff;
-				font-family: kremlin, sans-serif;
-			}
+  		}
+  		.content {
+  			position: absolute;
+  			width: 100%;
+  			min-height: 100%;
+  			z-index: 1000;
+  			background-color: rgba(0,0,0,0.4);
+  		}
+  		.content h1 {
+  			text-align: center;
+  			font-size: 6em;
+  			color: #fc00ff;
+  			padding-top: 2%;
+  		}
+  		.content p {
+  			text-align: center;
+  			font-size: 1em;
+  			letter-spacing: 0.3em;
+  			color: #fff;
+  			font-family: kremlin, sans-serif;
+  		}
       a:link {
         color: #00a8ff;
         }
@@ -146,21 +147,19 @@
           display: none;
         }
       }
-		</style>
+  	</style>
+  </head>
+  <body>
+  	<div class="fullscreen-bg">
+  		<video poster="BG Static.jpg" id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted" class="fullscreen-bg__video">
+  			<source src="BG Vid.mp4" type="video/mp4">
+  			Video not supported
+  		</video>
+  	</div>
 
 
-
-
-		<div class="fullscreen-bg">
-			<video poster="BG Static.jpg" id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted" class="fullscreen-bg__video">
-				<source src="BG Vid.mp4" type="video/mp4">
-				Video not supported
-			</video>
-		</div>
-
-
-		<div class="content">
-			<h1>Blood_XIII</h1>
+  	<div class="content">
+  		<h1>Blood_XIII</h1>
       <div class="container">
         <p>
           <script language="JavaScript">
@@ -291,6 +290,6 @@
           </div>
         </div>
       </div>
-		</div>
+  	</div>
 	</body>
 </html>
